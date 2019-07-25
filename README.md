@@ -38,10 +38,12 @@ Le paramètre source permet de transmettre à Enroller l'information de provenan
 
 Le paramètre frequence permet de nous transmettre votre information de fréquence d'utilisation de l'utilisateur (nombre de jours actifs, nombre de sessions, etc).
 
-## Div pour afficher le contenu du pied d'article
+## Div pour afficher le contenu du pied d'article + ViewPay
 
 ```html
 <div id="VPEnroller">
+</div>
+<div id="cadreJokerlyADS">
 </div>
 ```
 Ce div doit être placé dans votre pied d'article. Il affichera en fonction des règles définies pour Enroller le bon scénario de pied d'article.
