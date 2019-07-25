@@ -31,8 +31,11 @@ Les fonctions JS vont permettre au paywall de s'afficher correctement et de fair
 ```
 
 Le paramètre site_id est celui de votre compte ViewPay. Si vous ne l'avez pas encore, veuillez nous contacter.
+
 Le paramètre zone correspond au code région / département (?) / postal (?) de l'utilisateur.
+
 Le paramètre source permet de transmettre à Enroller l'information de provenance de l'utilisateur : SEO/RS/Direct...
+
 Le paramètre frequence permet de nous transmettre votre information de fréquence d'utilisation de l'utilisateur (nombre de jours actifs, nombre de sessions, etc).
 
 ## Div pour afficher le contenu du pied d'article
