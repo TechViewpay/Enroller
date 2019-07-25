@@ -46,4 +46,4 @@ Le paramètre frequence permet de nous transmettre votre information de fréquen
 <div id="cadreJokerlyADS">
 </div>
 ```
-Ce div doit être placé dans votre pied d'article. Il affichera en fonction des règles définies pour Enroller le bon scénario de pied d'article.
+Ces div doivent être placés dans votre pied d'article. Le div VPEnroller affichera en fonction des règles définies pour Enroller le bon scénario de pied d'article, et le div cadreJokerlyADS est nécessaire pour l'affichage du module publicitaire ViewPay.
