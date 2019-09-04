@@ -27,7 +27,7 @@ Les fonctions JS vont permettre au paywall de s'afficher correctement et de fair
                                         frequence : 1 //fréquence de l'utilisateur
                         });
                 }
-        </script>
+</script>
 ```
 
 Le paramètre site_id est celui de votre compte ViewPay. Si vous ne l'avez pas encore, veuillez nous contacter.
@@ -42,10 +42,65 @@ Le paramètre frequence permet de nous transmettre votre information de fréquen
 
 ```html
 <div id="VPEnroller">
-</div>
+  </div>
 <div id="VPmodal">
-<div id="cadreJokerlyADS">
-</div>
+  <div id="cadreJokerlyADS">
+  </div>
 </div>
 ```
 Ces div doivent être placés dans votre pied d'article. Le div VPEnroller affichera en fonction des règles définies pour Enroller le bon scénario de pied d'article, et le div cadreJokerlyADS est nécessaire pour l'affichage du module publicitaire ViewPay.
+
+## CSS des éléments d'Enroller + ViewPay 
+
+```
+#cadreJokerlyADS{
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	position: fixed;
+	bottom: 0;
+	width: 650px !important;
+	height: 450px !important;
+	z-index:999999 !important;
+}
+
+Le z-index est nécessaire à la visibilité de la publicité. Il est impératif de le monter si nécessaire si une frame/bannière/autre est au dessus du nôtre.
+Ceci est obligatoire afin de garantir de CPM élevé.
+```
+
+Pour les sites Mobiles/Tablettes : exploiter le responsive
+
+Pour votre site mobile, il est préférable d’utiliser tout l’espace vertical disponible en ouvrant l’iframe en 100% width et height, ou en spécifiant la taille maximale que vous pouvez nous offrir.
+
+Les balises média suivantes seront à ajouter à votre page CSS pour permettre aux personnes sur mobile de profiter pleinement de l’interface ViewPay:
+
+```
+@media screen and (max-width: 600px){
+	#cadreJokerlyADS{
+	width:100% !important;
+	height:100% !important;
+	margin-top:0;
+	}
+}
+@media screen and ((min-width: 601px) and (max-width: 1024px)){
+	#cadreJokerlyADS{
+	width:100% !important;
+	height:100% !important;
+	margin-top:0;
+	margin-left:0;
+	}
+}
+```
+
+Pour le fond noir :
+```
+#VPmodal{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+```
