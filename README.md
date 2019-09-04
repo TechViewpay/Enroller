@@ -43,7 +43,7 @@ Le paramètre frequence permet de nous transmettre votre information de fréquen
 ```html
 <div id="VPEnroller">
 </div>
-<div id=VPmodal">
+<div id="VPmodal">
 <div id="cadreJokerlyADS">
 </div>
 </div>
