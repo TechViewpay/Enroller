@@ -43,7 +43,7 @@ Le paramètre frequence permet de nous transmettre votre information de fréquen
 ```html
 <div id="VPEnroller">
   </div>
-<div id="VPmodal">
+<div id="VPmodal"> <!--> optionnel <-->
   <div id="cadreJokerlyADS">
   </div>
 </div>
@@ -100,7 +100,7 @@ Pour le fond noir :
     height: 100%;
     display: none;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.75);
     z-index: 1000;
 }
 ```
