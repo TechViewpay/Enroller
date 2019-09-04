@@ -52,7 +52,7 @@ Ces div doivent être placés dans votre pied d'article. Le div VPEnroller affic
 
 ## CSS des éléments d'Enroller + ViewPay 
 
-```
+```css
 #cadreJokerlyADS{
 	margin: auto;
 	top: 0;
@@ -75,7 +75,7 @@ Pour votre site mobile, il est préférable d’utiliser tout l’espace vertica
 
 Les balises média suivantes seront à ajouter à votre page CSS pour permettre aux personnes sur mobile de profiter pleinement de l’interface ViewPay:
 
-```
+```css
 @media screen and (max-width: 600px){
 	#cadreJokerlyADS{
 	width:100% !important;
@@ -94,7 +94,7 @@ Les balises média suivantes seront à ajouter à votre page CSS pour permettre 
 ```
 
 Pour le fond noir :
-```
+```css
 #VPmodal{
     width: 100%;
     height: 100%;
