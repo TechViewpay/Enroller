@@ -21,10 +21,10 @@ Les fonctions JS vont permettre au paywall de s'afficher correctement et de fair
                 var enroller = null;
                 function VPEnroller_init(){
                         enroller = new VPEnroller({
-                                        site_id: '65b94a697eb8bcd1', //exemple
-                                        zone : 'A6', //exemple
-                                        source : 'SEO', //exemple
-                                        frequence : 1 //exemple
+                                        site_id: '65b94a697eb8bcd1', //votre ID ViewPay
+                                        zone : '14', //numéro de département sur 2 caractères
+                                        source : 'SEO', //source ou referrer
+                                        frequence : 1 //fréquence de l'utilisateur
                         });
                 }
         </script>
@@ -32,7 +32,7 @@ Les fonctions JS vont permettre au paywall de s'afficher correctement et de fair
 
 Le paramètre site_id est celui de votre compte ViewPay. Si vous ne l'avez pas encore, veuillez nous contacter.
 
-Le paramètre zone correspond au code région / département (?) / postal (?) de l'utilisateur.
+Le paramètre zone correspond au code département de l'utilisateur.
 
 Le paramètre source permet de transmettre à Enroller l'information de provenance de l'utilisateur : SEO/RS/Direct...
 
@@ -43,7 +43,9 @@ Le paramètre frequence permet de nous transmettre votre information de fréquen
 ```html
 <div id="VPEnroller">
 </div>
+<div id=VPmodal">
 <div id="cadreJokerlyADS">
+</div>
 </div>
 ```
 Ces div doivent être placés dans votre pied d'article. Le div VPEnroller affichera en fonction des règles définies pour Enroller le bon scénario de pied d'article, et le div cadreJokerlyADS est nécessaire pour l'affichage du module publicitaire ViewPay.
