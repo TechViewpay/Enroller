@@ -25,6 +25,13 @@ Les fonctions JS vont permettre au paywall de s'afficher correctement et de fair
                                         zone : '14', //numéro de département sur 2 caractères
                                         source : 'SEO', //source ou referrer
                                         frequence : 1 //fréquence de l'utilisateur
+					onLoadingASQ : function(){
+						document.getElementById('VPmodal').style.display='block';
+					},
+					complete_callback : function(){
+						document.getElementById('VPmodal').style.display='none';
+					}
+			});
                         });
                 }
 </script>
@@ -102,5 +109,6 @@ Pour le fond noir :
     position: fixed;
     background-color: rgba(0, 0, 0, 0.75);
     z-index: 1000;
+    display: none;
 }
 ```
