@@ -32,7 +32,6 @@ Les fonctions JS vont permettre au paywall de s'afficher correctement et de fair
 						document.getElementById('VPmodal').style.display='none';
 					}
 			});
-                        });
                 }
 </script>
 ```
